@@ -15,28 +15,42 @@ class Bolt(BaseModel):
     d1: float
     d3: float
     A: float
+    Re: float = Field(default=None)
+    Rm: float = Field(default=None)
 
 
-def get_bolt_data(designation: str) -> Bolt:
+def get_bolt_strength(klasa: str) -> tuple[float, float]:
+    first_sign = int(klasa.split(".")[0])
+    second_sign = int(klasa.split(".")[1])
+    Re = first_sign * second_sign * 10
+    Rm = second_sign * 100
+    return Re, Rm
+
+
+def get_bolt_data(designation: str, klasa: str = "8.8", preload: float = 0.6) -> Bolt:
     bolts_df = pd.read_csv(BOLTS_PATH, index_col="designation")
     if designation not in bolts_df.index:
         raise ValueError(f"Designation {designation} not found in data.")
+
+    Re, Rm = get_bolt_strength(klasa)
+
     return Bolt(
         designation=designation,
+        klasa=klasa,
+        preload=preload,
         p=bolts_df.loc[designation, "p_mm"],
         d=bolts_df.loc[designation, "d_mm"],
         d2=bolts_df.loc[designation, "d2_mm"],
         d1=bolts_df.loc[designation, "d1_mm"],
         d3=bolts_df.loc[designation, "d3_mm"],
         A=bolts_df.loc[designation, "A_mm2"],
+        Re=Re,
+        Rm=Rm,
     )
 
 
 def calculate_axial_load(bolt: Bolt) -> float:
-    first_sign = int(bolt.klasa.split(".")[0])
-    second_sign = int(bolt.klasa.split(".")[1])
-    Re = first_sign * second_sign * 10  # MPa
-    return round(bolt.preload * Re * bolt.A / 1000, 2)  # kN
+    return round(bolt.preload * bolt.Re * bolt.A / 1000, 2)  # kN
 
 
 def calculate_torque(bolt: Bolt, dm: float, mi: float = 0.15) -> float:
@@ -46,8 +60,14 @@ def calculate_torque(bolt: Bolt, dm: float, mi: float = 0.15) -> float:
     return round(axial_load / 2 * (bolt.d2 * np.tan(incl_angle + friction_angle) + dm * mi), 2)
 
 
-if __name__ == "__main__":
-    bolt1 = get_bolt_data("M10")
+def main() -> None:
+    bolt1 = get_bolt_data("M10", "8.8")
     dm = (24 + 13.5) / 2  # based on DIN125
+    axial_load = calculate_axial_load(bolt1)
     torque = calculate_torque(bolt1, dm)
-    print(f"Calculated torque for {bolt1.designation}: {torque} Nm")
+    print(f"Axial load: {axial_load} kN")
+    print(f"Torque: {torque} Nm")
+
+
+if __name__ == "__main__":
+    main()
