@@ -2,10 +2,10 @@
 
 Python course materials for engineering master's students.
 
-## Prerequisites
+## Preparation of the repository for laboratory class
 
 Before starting, make sure you have the following installed:
-- **uv** (Python package manager by Astral - will automatically install Python 3.12+ if needed)
+- **uv**
 - **Visual Studio Code**
 - **Git**
 
@@ -18,13 +18,13 @@ Clone this repository into a folder named with your **student index number**.
 Replace `123456` with your actual index number:
 
 ```bash
-git clone https://github.com/INSTRUCTOR-USERNAME/data-analysis-for-engineers.git 123456
+git clone https://github.com/w10k57-git/data-analysis.git 123456
 cd 123456
 ```
 
 **Example:** If your index number is `987654`, you would run:
 ```bash
-git clone https://github.com/INSTRUCTOR-USERNAME/data-analysis-for-engineers.git 987654
+git clone https://github.com/w10k57-git/data-analysis.git 987654
 cd 987654
 ```
 
@@ -88,7 +88,7 @@ git commit -m "Complete task XYZ"
 
 ## Examples
 
-- [Bolt Calculator](examples/bolt-calculator/) - Calculate bolted connection parameters
+
 
 ## Repository Structure
 
@@ -97,7 +97,7 @@ git commit -m "Complete task XYZ"
 ├── examples/       # Code examples and exercises
 ├── tasks/          # YOUR workspace - work here!
 ├── src/            # Utility functions you can use
-└── data/           # Data files for examples
+└── data/           # Data files for the course
 ```
 
 ## Git Workflow Summary
@@ -124,38 +124,6 @@ git diff
 - [ ] Run `uv sync` to install dependencies
 - [ ] Configure `git config user.name` and `git config user.email`
 - [ ] Create `lab` branch with `git checkout -b lab`
-- [ ] Test running a Python script with `uv run`
-
-## Tips for Success
-
-- **Always work on the `lab` branch**
-- **Work in the `tasks/` directory** for your assignments
-- **Commit often** with clear messages
-- **Pull updates from `main`** regularly to get new materials
-- **Use utility functions** from `src/` in your code
-
-## Example Workflow Session
-
-```bash
-# Start work
-cd 123456
-git checkout lab
-
-# Get instructor updates
-git checkout main
-git pull origin main
-git checkout lab
-git merge main
-
-# Work on your task
-cd tasks/
-# ... edit your files ...
-uv run python my_analysis.py
-
-# Commit your work
-git add .
-git commit -m "Complete bolt stress analysis"
-```
 
 ---
 
