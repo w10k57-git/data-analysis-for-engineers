@@ -1,68 +1,68 @@
 # Analiza danych inżynierskich z wykorzystaniem języka Python
 
-Python course materials for engineering master's students. This course assumes no to very little Python familiarity at the beginning. The course starts with fundamental concepts in Python, and then moving through basic scripting and numerical calculations using `math` and `numpy`. In the latter part of the course, students learn how to load data from various sources, including web scraping. On the fifth laboratory, students learn how to perform an Exploratory Data Analysis, followed by some statistical analysis of the results. They also study the interactions with databases. The course culminates in learning about basic interaction with chatbots, including prompting strategies.
+Materiały do kursu Pythona dla studentów inżynierii na studiach magisterskich. Kurs zakłada brak lub bardzo małą znajomość Pythona na początku. Kurs rozpoczyna się od podstawowych koncepcji w Pythonie, a następnie przechodzi przez podstawowe skrypty i obliczenia numeryczne przy użyciu `math` i `numpy`. W późniejszej części kursu studenci uczą się, jak wczytywać dane z różnych źródeł, w tym scrapowania stron internetowych. Na piątych zajęciach laboratoryjnych studenci uczą się przeprowadzać eksploracyjną analizę danych, a następnie analizę statystyczną wyników. Poznają również interakcje z bazami danych. Kurs kończy się nauką podstawowej interakcji z chatbotami, w tym strategii promptowania.
 
-## Preparation of the repository for laboratory class
+## Przygotowanie repozytorium do zajęć laboratoryjnych
 
-Before starting, make sure you have the following installed:
+Przed rozpoczęciem upewnij się, że masz zainstalowane:
 
 - **uv**
 - **Visual Studio Code**
 - **Git**
 
-## Setup
+## Konfiguracja
 
-### 1. Clone the Repository
+### 1. Sklonuj repozytorium
 
-Clone this repository into a folder named with your **student index number**.
+Sklonuj to repozytorium do folderu nazwanego Twoim **numerem indeksu**.
 
-Replace `123456` with your actual index number:
+Zamień `123456` na swój rzeczywisty numer indeksu:
 
 ```bash
 git clone https://github.com/w10k57-git/data-analysis.git 123456
 cd 123456
 ```
 
-**Example:** If your index number is `987654`, you would run:
+**Przykład:** Jeśli Twój numer indeksu to `987654`, wykonaj:
 
 ```bash
 git clone https://github.com/w10k57-git/data-analysis.git 987654
 cd 987654
 ```
 
-### 2. Install Dependencies
+### 2. Zainstaluj zależności
 
 ```bash
 uv sync
 ```
 
-### 3. Configure Git
+### 3. Skonfiguruj Git
 
 ```bash
-git config user.name "Your Name"
-git config user.email "your.email@example.com"
+git config user.name "Twoje Imię i Nazwisko"
+git config user.email "twoj.email@example.com"
 ```
 
-Verify your configuration:
+Zweryfikuj swoją konfigurację:
 
 ```bash
 git config user.name
 git config user.email
 ```
 
-### 4. Create Your Working Branch
+### 4. Utwórz swoją gałąź roboczą
 
 ```bash
 git checkout -b lab
 ```
 
-**Important:** All students work on the `lab` branch. Never commit to `main`!
+**Ważne:** Wszyscy studenci pracują na gałęzi `lab`. Nigdy nie commituj do `main`!
 
-## Daily Workflow
+## Codzienny workflow
 
-### Getting Instructor Updates
+### Pobieranie aktualizacji od prowadzącego
 
-When the instructor publishes new materials:
+Gdy prowadzący opublikuje nowe materiały:
 
 ```bash
 git checkout main
@@ -71,61 +71,61 @@ git checkout lab
 git merge main
 ```
 
-### Working on Tasks
+### Praca nad zadaniami
 
-All your work should be done in the `tasks/` directory:
+Cała Twoja praca powinna odbywać się w katalogu `tasks/`:
 
 ```bash
 cd tasks/
 uv run python your_script.py
 ```
 
-### Committing Your Work
+### Commitowanie swojej pracy
 
 ```bash
 git add .
-git commit -m "Complete task XYZ"
+git commit -m "Ukończenie zadania XYZ"
 ```
 
-**Note:** Your work stays local. You don't push to the remote repository.
+**Uwaga:** Twoja praca pozostaje lokalna. Nie pushuj do zdalnego repozytorium.
 
-## Examples
+## Przykłady
 
-## Repository Structure
+## Struktura repozytorium
 
 ```
-123456/  (your index number)
-├── examples/       # Code examples and exercises
-├── tasks/          # YOUR workspace - work here!
-├── src/            # Utility functions you can use
-└── data/           # Data files for the course
+123456/  (twój numer indeksu)
+├── examples/       # Przykłady kodu i ćwiczenia
+├── tasks/          # TWOJA przestrzeń robocza - pracuj tutaj!
+├── src/            # Funkcje narzędziowe, których możesz używać
+└── data/           # Pliki danych do kursu
 ```
 
-## Git Workflow Summary
+## Podsumowanie workflow Git
 
-- **`main`** - Course materials from instructor (read-only)
-- **`lab`** - Your working branch (all students use this name)
+- **`main`** - Materiały kursu od prowadzącego (tylko do odczytu)
+- **`lab`** - Twoja gałąź robocza (wszyscy studenci używają tej nazwy)
 
-### Key Commands
+### Kluczowe polecenia
 
 ```bash
-# Check status
+# Sprawdź status
 git status
 
-# View history
+# Zobacz historię
 git log --oneline
 
-# See changes
+# Zobacz zmiany
 git diff
 ```
 
-## Complete Setup Checklist
+## Kompletna lista kontrolna konfiguracji
 
-- [ ] Clone repository into folder named with your index number
-- [ ] Run `uv sync` to install dependencies
-- [ ] Configure `git config user.name` and `git config user.email`
-- [ ] Create `lab` branch with `git checkout -b lab`
+- [ ] Sklonuj repozytorium do folderu nazwanego swoim numerem indeksu
+- [ ] Uruchom `uv sync` aby zainstalować zależności
+- [ ] Skonfiguruj `git config user.name` i `git config user.email`
+- [ ] Utwórz gałąź `lab` za pomocą `git checkout -b lab`
 
 ---
 
-Happy coding! 🚀
+Miłego kodowania! 🚀
