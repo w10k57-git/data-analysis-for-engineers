@@ -1,10 +1,11 @@
 # Analiza danych inżynierskich z wykorzystaniem języka Python
 
-Python course materials for engineering master's students.
+Python course materials for engineering master's students. This course assumes no to very little Python familiarity at the beginning. The course starts with fundamental concepts in Python, and then moving through basic scripting and numerical calculations using `math` and `numpy`. In the latter part of the course, students learn how to load data from various sources, including web scraping. On the fifth laboratory, students learn how to perform an Exploratory Data Analysis, followed by some statistical analysis of the results. They also study the interactions with databases. The course culminates in learning about basic interaction with chatbots, including prompting strategies.
 
 ## Preparation of the repository for laboratory class
 
 Before starting, make sure you have the following installed:
+
 - **uv**
 - **Visual Studio Code**
 - **Git**
@@ -23,6 +24,7 @@ cd 123456
 ```
 
 **Example:** If your index number is `987654`, you would run:
+
 ```bash
 git clone https://github.com/w10k57-git/data-analysis.git 987654
 cd 987654
@@ -42,6 +44,7 @@ git config user.email "your.email@example.com"
 ```
 
 Verify your configuration:
+
 ```bash
 git config user.name
 git config user.email
@@ -87,8 +90,6 @@ git commit -m "Complete task XYZ"
 **Note:** Your work stays local. You don't push to the remote repository.
 
 ## Examples
-
-
 
 ## Repository Structure
 
