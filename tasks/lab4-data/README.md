@@ -1,6 +1,8 @@
 # Laboratorium 4: Ładowanie i przetwarzanie danych
 
-Na tym laboratorium nauczysz się wczytywać i przetwarzać duże zbiory danych na przykładzie pomiarów systemu hydraulicznego. Czujniki mają różne częstotliwości próbkowania (1 Hz, 10 Hz, 100 Hz). Twoim zadaniem jest zunifikowanie wszystkich czujników do wspólnej częstotliwości i zapisanie w formacie pickle. Przed przystąpienie do zadań, pobierz dane i zapisz je w folderze `~/data/external`
+Na tym laboratorium nauczysz się wczytywać i przetwarzać duże zbiory danych na przykładzie pomiarów systemu hydraulicznego. Czujniki mają różne częstotliwości próbkowania (1 Hz, 10 Hz, 100 Hz). Twoim zadaniem jest zunifikowanie wszystkich czujników do wspólnej częstotliwości i zapisanie w formacie pickle. Przed przystąpienie do zadań, pobierz dane z poniższego adresu i zapisz je w folderze `~/data/external`.
+
+URL: <https://archive.ics.uci.edu/dataset/447/condition+monitoring+of+hydraulic+systems>
 
 ---
 
