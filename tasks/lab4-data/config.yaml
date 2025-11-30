@@ -1,0 +1,24 @@
+temperature:
+  files:
+    - TS1.txt
+    - TS2.txt
+    - TS3.txt
+    - TS4.txt
+  hz: 1
+
+pressure:
+  files:
+    - PS1.txt
+    - PS2.txt
+    - PS3.txt
+    - PS4.txt
+    - PS5.txt
+    - PS6.txt
+  hz: 100
+
+flow:
+  files:
+    - FS1.txt
+    - FS2.txt
+  hz: 10
+
