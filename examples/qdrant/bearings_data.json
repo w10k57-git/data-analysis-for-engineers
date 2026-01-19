@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "designation": "6205",
+    "type": "Deep Groove Ball Bearing",
+    "description": "Deep groove ball bearing 6205 with bore 25mm, suitable for high speed applications and radial loads"
+  },
+  {
+    "id": 2,
+    "designation": "NU308",
+    "type": "Cylindrical Roller Bearing",
+    "description": "Cylindrical roller bearing NU308 with bore 40mm, designed for heavy radial loads and separable design"
+  },
+  {
+    "id": 3,
+    "designation": "51105",
+    "type": "Thrust Ball Bearing",
+    "description": "Thrust ball bearing 51105 with bore 25mm, optimized for axial loads in one direction"
+  }
+]
