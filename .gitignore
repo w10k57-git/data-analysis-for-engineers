@@ -161,6 +161,7 @@ cython_debug/
 
 # Claude specific
 .claude/settings.local.json
+.claude
 
 # Data folder
 data/external
