@@ -1,0 +1,26 @@
+[
+  {
+    "designation": "6205",
+    "bearing_type": "Deep Groove Ball",
+    "bore_diameter": 25.0,
+    "outer_diameter": 52.0,
+    "width": 15.0,
+    "load_rating": 14.0
+  },
+  {
+    "designation": "NU308",
+    "bearing_type": "Cylindrical Roller",
+    "bore_diameter": 40.0,
+    "outer_diameter": 90.0,
+    "width": 23.0,
+    "load_rating": 61.8
+  },
+  {
+    "designation": "51105",
+    "bearing_type": "Thrust Ball",
+    "bore_diameter": 25.0,
+    "outer_diameter": 42.0,
+    "width": 11.0,
+    "load_rating": 18.6
+  }
+]
