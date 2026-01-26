@@ -9,10 +9,14 @@ authors = [
 requires-python = ">=3.13"
 dependencies = [
     "duckdb>=1.4.3",
+    "instructor>=1.14.4",
     "matplotlib>=3.10.6",
     "numpy>=2.3.3",
+    "openai>=2.15.0",
     "pandas>=2.3.2",
     "pydantic>=2.11.9",
+    "pydantic-ai>=1.47.0",
+    "python-dotenv>=1.2.1",
     "pyyaml>=6.0.3",
     "scikit-learn>=1.7.2",
     "seaborn>=0.13.2",
