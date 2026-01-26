@@ -1,0 +1,92 @@
+[
+    {
+        "id": "1",
+        "log_text": "2026-01-09 08:15:42 [WARNING] Hydraulic Press #3 - Pressure fluctuation detected during stamping operation. Oil temperature exceeded normal range by 15°C. Immediate inspection recommended.",
+        "expected": {
+            "machine": "Hydraulic Press #3",
+            "malfunction": "Pressure fluctuation, oil temperature exceeded normal range by 15°C",
+            "severity": "High"
+        }
+    },
+    {
+        "id": "2",
+        "log_text": "CNC Mill A-42 reported minor vibration in spindle bearing at 3500 RPM. Maintenance scheduled for next week. No immediate risk to operations.",
+        "expected": {
+            "machine": "CNC Mill A-42",
+            "malfunction": "Minor vibration in spindle bearing at 3500 RPM",
+            "severity": "Low"
+        }
+    },
+    {
+        "id": "3",
+        "log_text": "ALERT: Conveyor Belt System CB-7 EMERGENCY STOP triggered at 14:33. Belt slippage detected, multiple packages damaged. Production line halted.",
+        "expected": {
+            "machine": "Conveyor Belt System CB-7",
+            "malfunction": "Belt slippage, multiple packages damaged",
+            "severity": "High"
+        }
+    },
+    {
+        "id": "4",
+        "log_text": "Robotic Arm Unit R-15 encountered calibration drift of 0.5mm in Y-axis positioning. Recalibration cycle completed successfully. System operational.",
+        "expected": {
+            "machine": "Robotic Arm Unit R-15",
+            "malfunction": "Calibration drift of 0.5mm in Y-axis",
+            "severity": "Low"
+        }
+    },
+    {
+        "id": "5",
+        "log_text": "Jan 9 11:20 - Cooling System Module CS-09: Pump efficiency decreased to 72% (normal: 95%). Temperature regulation unstable. Requires immediate technician attention.",
+        "expected": {
+            "machine": "Cooling System Module CS-09",
+            "malfunction": "Pump efficiency decreased to 72%, temperature regulation unstable",
+            "severity": "Medium"
+        }
+    },
+    {
+        "id": "6",
+        "log_text": "Laser Cutting Machine LCM-23 experienced intermittent power supply issues between 09:00-09:15. Three cut cycles incomplete. Power restored, but root cause unknown.",
+        "expected": {
+            "machine": "Laser Cutting Machine LCM-23",
+            "malfunction": "Intermittent power supply issues, three cut cycles incomplete",
+            "severity": "Medium"
+        }
+    },
+    {
+        "id": "7",
+        "log_text": "CRITICAL: Injection Molding Press IMP-5 - Hydraulic cylinder seal failure. Fluid leak rate: 2.5L/hour. Machine taken offline immediately to prevent damage.",
+        "expected": {
+            "machine": "Injection Molding Press IMP-5",
+            "malfunction": "Hydraulic cylinder seal failure, fluid leak",
+            "severity": "High"
+        }
+    },
+    {
+        "id": "8",
+        "log_text": "Assembly Station AS-18 sensor misalignment detected. Part recognition accuracy dropped from 99.2% to 96.8%. Sensor cleaning scheduled.",
+        "expected": {
+            "machine": "Assembly Station AS-18",
+            "malfunction": "Sensor misalignment, part recognition accuracy dropped",
+            "severity": "Low"
+        }
+    },
+    {
+        "id": "9",
+        "log_text": "09-JAN-2026 16:45 | Packaging Robot PR-11: Gripper mechanism showing signs of wear. Grip force variance measured at ±8N (tolerance: ±3N). Replacement parts ordered.",
+        "expected": {
+            "machine": "Packaging Robot PR-11",
+            "malfunction": "Gripper mechanism wear, grip force variance exceeds tolerance",
+            "severity": "Medium"
+        }
+    },
+    {
+        "id": "10",
+        "log_text": "Welding Station WS-7 reported electrode consumption rate 40% higher than baseline. Weld quality remains within spec but monitoring increased. Possible arc instability.",
+        "expected": {
+            "machine": "Welding Station WS-7",
+            "malfunction": "Electrode consumption rate 40% higher than baseline, possible arc instability",
+            "severity": "Low"
+        }
+    }
+]
